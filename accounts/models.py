@@ -6,7 +6,7 @@ from test.dtracedata import instance
 
 # Create your models here.
 class Profile(models.Model):
-    name = models.CharField(max_length=250, blank=True)
+    name = models.CharField(max_length=250, null=True, blank=True)
     user = models.OneToOneField(User, on_delete=models.CASCADE, null=True, default=None)
 
     def __str__(self):
