@@ -6,6 +6,13 @@
     <title>Management App</title>
 </head>
 <body>
+{% if messages %}
+    <div class="alert alert-success">
+        <div class="messages text-center">
+            {% for message in messages %} {{ message }} {% endfor %}
+        </div>
+    </div>
+{% endif %} 
 {% block content %}
 
 {% endblock %}
