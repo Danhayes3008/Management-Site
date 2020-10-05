@@ -27,3 +27,8 @@ def login(request):
         login_form = LoginForm()
     context = {'login_form': login_form}
     return render(request, 'login.html', context)
+
+def logout(request):
+    auth.logout(request)
+    messages.success(request, "Thank you for visiting, please come again")
+    return redirect(reverse('login'))
