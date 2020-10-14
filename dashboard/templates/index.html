@@ -1,17 +1,17 @@
 {% extends 'base.html' %}
 
 {% block content %} 
-<h1>Dashboard</h1>
+<h1>To Do List:</h1>
 <table style="width: 25%;">
   <tr>
-    <th>task</th>
-    <th>created</th>
+    <th class="task">task</th>
+    <th class="task">created</th>
     <th></th>
   </tr>
   {% for t in tasks %}
   <tr>    
-    <td>{{t.title}}</td>
-    <td>{{t.created}}</td>   
+    <td class="task">{{t.title}}</td>
+    <td class="task">{{t.created}}</td>   
   </tr>
   {% endfor %}
 </table>
