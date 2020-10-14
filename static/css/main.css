@@ -2,6 +2,9 @@ body{
     padding: 0px;
     margin: 0px;
 }
+.container{
+    padding: 5px;
+}
 a{
     text-decoration: none;
     color: antiquewhite;
@@ -24,4 +27,10 @@ ul li{
     padding: 13px;
     color: antiquewhite;
     font-weight: bold;
+}
+
+/* table */
+
+.task{
+    text-align: center;
 }
