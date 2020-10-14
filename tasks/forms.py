@@ -2,9 +2,9 @@ from django import forms
 from .models import *
 
 class taskForm(forms.ModelForm):
-    name = forms.CharField()
+    title = forms.CharField()
 
     class Meta:
         model = Task
-        fields = ['name', 'user', 'status']
+        fields = ['title']
         
