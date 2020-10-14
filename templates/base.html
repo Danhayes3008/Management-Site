@@ -23,6 +23,7 @@
             <ul class="">
                 {% comment %} This if statement checks who is logged in and displays the donate nav link and profile link if the user exists {% endcomment %}
                 {% if user.is_authenticated %}
+                <li><a href="{% url 'index' %}">Dashboard</a></li>
                 <li><a class="nb" href="#">{{ user.username }}</a></li>
                 <li><a href="{% url 'addTask' %}">add task</a></li>
                 <li><a href="#">update task</a></li>
