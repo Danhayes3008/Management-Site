@@ -2,7 +2,7 @@
 
 {% block content %} 
 <h1>To Do List:</h1>
-<table style="width: 25%;">
+<table>
   <tr>
     <th class="task">task</th>
     <th class="task">created</th>
@@ -11,7 +11,8 @@
   {% for t in tasks %}
   <tr>    
     <td class="task">{{t.title}}</td>
-    <td class="task">{{t.created}}</td>   
+    <td class="task">{{t.created}}</td>
+    <td><button class="button-danger" action="submit">X</button></td> 
   </tr>
   {% endfor %}
 </table>
