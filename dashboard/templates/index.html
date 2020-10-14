@@ -6,12 +6,14 @@
   <tr>
     <th class="task">task</th>
     <th class="task">created</th>
+    <th class="task">deadline</th>
     <th></th>
   </tr>
   {% for t in tasks %}
   <tr>    
     <td class="task">{{t.title}}</td>
     <td class="task">{{t.created}}</td>
+    <td class="task">{{t.deadline}}</td>
     <td><button class="button-danger" action="submit">X</button></td> 
   </tr>
   {% endfor %}
