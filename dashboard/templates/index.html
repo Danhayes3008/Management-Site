@@ -2,5 +2,8 @@
 
 {% block content %} 
 <h1>Dashboard</h1>
+{% for t in tasks %}
+<p>{{t.title}}</p>
+{% endfor %}
 {% endblock %}
     
